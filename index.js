@@ -22,13 +22,13 @@ app.get("/", (req, res) => {
 
 app.post("/calculate", async (req, res) => {
     console.log(req.body)
-    gender = req.body.gender
-    age = req.body.age
-    weight = req.body.weight
-    bodyfat = req.body.bodyfat
-    height = req.body.height
-    activityLevel = req.body.activityLevel
-    netCarbs = req.body.netCarbs
+    gender = parseInt(req.body.gender)
+    age =  parseInt(req.body.age)
+    weight =  parseInt(req.body.weight)
+    bodyfat =  parseInt(req.body.bodyfat)
+    height =  parseInt(req.body.height)
+    activityLevel =  parseInt(req.body.activityLevel)
+    netCarbs =  parseInt(req.body.netCarbs)
 
     var exampleData = {
         gender: gender,
