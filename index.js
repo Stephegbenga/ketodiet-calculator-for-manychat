@@ -82,9 +82,10 @@ app.post("/calculate", async (req, res) => {
     minimum = messageconstruct(result.minimum)
     desirable = messageconstruct(result.desirable)
     console.log(maintenance, minimum, desirable)
+    warnings = warnings.join()
 
 
-    message = `${bmr}\n\nMinimum\n\n${minimum}\n\nMaintenance${maintenance}\n\nDesirable\n\n${desirable}`
+    message = `${bmr}\n\nMinimum\n\n${minimum}\n\nMaintenance${maintenance}\n\nDesirable\n\n${desirable}\n\nWarnings: ${warnings}`
     console.log(message)
     res.send({message:message})
 
