@@ -28,7 +28,7 @@ app.post("/calculate", async (req, res) => {
     bodyfat =  parseInt(req.body.bodyfat)
     height =  parseInt(req.body.height)
     activityLevel =  parseInt(req.body.activityLevel)
-    netCarbs = 25
+    netCarbs =  parseInt(req.body.netCarbs)
 
     var exampleData = {
         gender: gender,
